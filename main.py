@@ -24,15 +24,7 @@ class Stos:
 
     def dodajDoStosu(self, klient):
         self.stack.append(klient)
-
-    def usunZeStosu(self):
-        if not self.is_empty():
-            return self.stack.pop()
-        return None
-
-    def is_empty(self):
-        return len(self.stack) == 0
-
+        
     def wyswietl(self):
         return self.stack
 
